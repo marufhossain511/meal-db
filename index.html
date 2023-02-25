@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="lg:mx-14 md:mt-8">
+        <div class="navbar bg-base-100 ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                
+              </div>
+              <h1 class="text-3xl font-bold">TastyHut</h1>
+            </div>
+            
+            <div class="navbar-end">
+                <button class="btn btn-warning px-8 font-semibold">SignUp</button>
+            </div>
+        </div>
+    </header>
+    <main>
+      <section class="mt-6">
+        <div class="img-tag ">
+            <div class="lg:pt-32">
+                <h1 class="text-white lg:text-7xl font-bold text-center">Taste Our Delicious</h1>
+                <h1 class="text-white lg:text-7xl  font-bold text-center"> Best Foods</h1>
+                <p class="text-white lg:text-2xl text-center mt-6">I like people who love to eat. They're the best kind of people in the world.</p>
+                <div class="mt-10 w-full inline-block ">
+                   <div class="lg:ml-[28%] md:ml-[29%] ml-10">
+                    <label class="input-group">
+                      <input id="search-input"  type="text" placeholder="Search Any Food" class=" input input-bordered lg:px-4 w-36 ml-8 lg:w-[40%]" />
+                      <button onclick="SearchFood()" class="btn btn-warning">Search</button>
+                    </label>
+                   </div>
+                </div>
+
+            </div>
+            
+        </div>
+      </section>
+<!-- card section -->
+      <section class="my-6 lg:mx-10">
+        <h1 class="text-5xl text-center mt-8 mb-10 font-medium">Your Favourite Food</h1>
+        <div id="card-container" class="grid lg:grid-cols-2 gap-8">
+        </div>
+        
+      </section>
+
+      <!-- modal -->
+      <section>
+        <div class="modal" id="my-modal-2">
+          <div class="modal-box">
+            <h3 id="detail-title" class="font-bold text-lg">Congratulations random Internet user!</h3>
+            <p  class="py-4">Ingredient :<span id="description"></span></p>
+            <div class="modal-action">
+             <a href="#" class="btn">close!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+     <!-- script file     -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script src="./app.js"></script>
+</body>
+</html>
